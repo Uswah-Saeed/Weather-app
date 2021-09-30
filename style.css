@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background: url('/images/autumn-02.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.form-body {
+    z-index: 20;
+    padding: 50px;
+    text-align: center;
+}
+
+.form-body h1 {
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'poppins';
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-body h2 {
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    font-family: 'poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+.form-input {
+    margin: 0 auto;
+    padding-top: 14px;
+}
+
+.text {
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.submit {
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(34, 31, 31);
+    background-color: #ffffff;
+}
